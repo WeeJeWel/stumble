@@ -2,10 +2,10 @@
 fetch('https://service.stumblingon.com/getSite', {
   method: 'POST',
   body: JSON.stringify({
-  	userId: Math.round(Math.random()*100000),
+    userId: Math.round(Math.random()*100000),
   })
 })
-	.then(res => res.json())
+  .then(res => res.json())
   .then(({ url }) => {
     window.location.href = url;
   })
